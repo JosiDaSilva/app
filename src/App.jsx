@@ -1,4 +1,4 @@
-import { useAuth0 } from "@auth0/auth0-react";
+
 import { useState } from 'react';
 import { LoginButton } from './components/shared/login';
 import './index.css';
@@ -20,7 +20,7 @@ import Card from "./components/shared/Card";
 
 
 function App() {
-  const { isAuthenticated } = useAuth0();
+
   const [showMenu, setShowMenu] = useState(false);
   const [showOrder, setShowOrder] = useState(false);
 
@@ -43,8 +43,7 @@ function App() {
   return (
     <>
     <div className="bg-[#262837] w-full min-h-screen">
-        {isAuthenticated ? (
-          <>
+      
            <Sidebar showMenu={showMenu} />
       <Car showOrder={showOrder} setShowOrder={setShowOrder}
      allProducts={allProducts}
@@ -86,10 +85,7 @@ function App() {
           </div>
         </div>
       </main>
-          </>
-        ) : (
-          <LoginButton />
-        )}
+      
       </div>
       </>
    
