@@ -9,7 +9,7 @@ export const Card = ({
 const products= allProducts.map(item=>item.id===product.id ? {...item, quantity: item.quantity +1} : 
   item);
   
-    return setAllProducts({...products});
+    return setAllProducts([...products]);
 }
     setAllProducts([...allProducts, product]);
   
