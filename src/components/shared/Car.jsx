@@ -1,15 +1,16 @@
 import React from "react";
 import { RiCloseLine, RiDeleteBin6Line } from "react-icons/ri";
 
-const Card = (props,
+const Card = ({
+  showOrder,
+  setShowOrder,
   allProducts,
-	setAllProducts,
-	total,
-	countProducts,
-	setCountProducts,
-	setTotal,) => {
-  const { showOrder, setShowOrder } = props;
-  
+  setAllProducts,
+  total,
+  countProducts,
+  setCountProducts,
+  setTotal,
+})=> {
 
 	const onDeleteProduct = product => {
 		const results = allProducts.filter(
