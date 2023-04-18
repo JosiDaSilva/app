@@ -32,18 +32,20 @@ const products= allProducts.map(item=>item.id===product.id ? {...item, quantity:
         
          
 
-            <div className="grid justify-center gap-2">
-         
-       <button className="bg-[#f07c04] p-1 flex justify-center
-        rounded-xl text-white " onClick={()=>onAddProduct(product)}>Agregar</button>
-<div className='count-products'>
-						<span id='contador-productos'></span>
-					</div>
-            </div>
-     
-     
-      
+             <div className="grid justify-center gap-2">
+ <p className="text-white p-.2">{product.stock_corrientes} en Stock en Corrientes</p><label for="stock_corr">Elegir Cantidad (10-{product.stock_corrientes}):</label>
+ <input required type="number" id="stock_corr" name="stock_corr"
+step="10"min="10" max={product.stock_corrientes} className=" p-.3 items-center rounded-xl text-black"/>
+	<button className="bg-[#f07c04] p-1 flex rounded-xl text-white text-center justify-center" onClick={()=>onAddProduct(product)}>Agregar</button>
 
+   </div>
+
+
+<p className="text-white p-.2">{product.stock_misiones} en Stock en Misiones</p><label for="stock_misio">Elegir Cantidad (10-{product.stock_misiones}):</label>
+<input required type="number" id="product.stock_misio" name="stock_misio" class="misio" step="10" min="10" max={product.stock_misiones} className=" p-.3 items-center rounded-xl text-black"/>
+	<input type="number" id="quantity_643eca8e89940" class="input-text qty text" step="1" min="1" max="10" name="quantity" value="1" title="Cantidad" size="4" placeholder="" inputmode="">
+     <button type="submit" name="add-to-cart" value="product.id" className="bg-[#f07c04] p-1 flex rounded-xl text-white text-center justify-center" onClick={()=>onAddProduct(product)}>Agregar</button>
+      
 
           </div>
         </div>
