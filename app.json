@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "autopartes-sol-app",
+    "slug": "autopartes-sol-app",
+    "version": "0.0.0",
+    "sdkVersion": "48.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "android": {
+      "package": "com.josiele13.autopartessolapp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5ec08296-ac6c-4951-9633-54450151750b"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.josiele13.autopartessolapp"
+    }
+  }
+}

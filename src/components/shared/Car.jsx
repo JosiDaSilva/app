@@ -79,7 +79,7 @@ const confirmarPedido = () =>{
                      </div>
                      {/* Price */}
                      <div>
-                       <span>{product.precio}</span>
+                       <span>${product.precio},00</span>
                      </div>
                      <div><RiDeleteBin6Line onClick={()=>onDeleteProduct(product)}/></div>
                    </div>

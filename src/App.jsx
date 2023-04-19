@@ -5,7 +5,7 @@ import './index.css';
 
 import {
   RiMenu3Fill,
-  RiPieChartLine,
+  RiShoppingCartFill,
   RiCloseLine
 } from "react-icons/ri";
 // Components
@@ -50,16 +50,19 @@ function App() {
      total={total}
      setTotal={setTotal}
      countProducts={countProducts}
-     setCountProducts={setCountProducts} />
+     setCountProducts={setCountProducts}
+      />
       {/* Menu movil */}
       <nav className="bg-[#1F1D2B] lg:hidden fixed w-full bottom-0 left-0 text-3xl text-gray-400 py-2 px-8 flex items-center justify-between rounded-tl-xl rounded-tr-xl">
         
        
-        <button onClick={toggleOrders} className="p-2">
-          <RiPieChartLine />
+        <button onClick={toggleOrders} className=" text-orange-500 grid">
+        <span className=" bg- [#f07c04] rounded-tl-xl py-0 px-6 text-white rigth-0">{countProducts}</span> <RiShoppingCartFill className='' />  
         </button>
         <button onClick={toggleMenu} className="text-white p-2">
-          {showMenu ? <RiCloseLine /> : <RiMenu3Fill />}
+          {showMenu ? <RiCloseLine /> : <RiMenu3Fill />  
+                   } 
+                
         </button>
       </nav>
       <main className="lg:pl-32 lg:pr-96 pb-20">
