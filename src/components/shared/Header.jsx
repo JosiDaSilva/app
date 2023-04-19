@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import { RiSearch2Line } from "react-icons/ri";
+
 
 import logo from "../../assets/logo.png";
 const Header = () => {
@@ -21,16 +21,7 @@ const Header = () => {
       />
       
         </div>
-        <form>
-          <div className="w-full relative">
-            <RiSearch2Line className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-300" />
-            <input
-              type="text"
-              className="bg-[#1F1D2B] w-full py-2 pl-10 pr-4 rounded-lg text-gray-300 outline-none"
-              placeholder="Buscar"
-            />
-          </div>
-        </form>
+        
       </div>
       {/* Tabs */}
       

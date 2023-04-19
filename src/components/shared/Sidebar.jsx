@@ -40,30 +40,13 @@ const Sidebar = (props) => {
               href="#"
               className="group-hover:bg-[#f07c04] p-4 flex justify-center rounded-xl text-[#f07c04] group-hover:text-white transition-colors text-2xl"
             >
-              Perfil
+             
             </a>
           </li>
           
          
-          
-          <li className="hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
-            <a
-              href="#"
-              className="group-hover:bg-[#f07c04] p-4 flex justify-center rounded-xl text-[#f07c04] group-hover:text-white transition-colors text-2xl"
-            >
-              Ajustes
-            </a>
-          </li>
-          <li className="hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
-            <a
-              href= "#" 
-              className="group-hover:bg-[#f07c04] p-4 flex justify-center rounded-xl text-[#f07c04] group-hover:text-white transition-colors text-2xl"
-            >
-             <button >
-                Pedido
-              </button>
-            </a>
-          </li>
+        
+         
           <li className="hover:bg-[#262837] p-4 rounded-t1-x1 rounded-bl-xl group transition-colors">
          
          <LogoutButton/>

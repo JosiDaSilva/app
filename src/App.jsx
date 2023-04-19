@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { LoginButton } from './components/shared/login';
+
 import './index.css';
 
 import {
@@ -20,10 +20,10 @@ import Card from "./components/shared/Card";
 
 
 function App() {
-
+ 
   const [showMenu, setShowMenu] = useState(false);
   const [showOrder, setShowOrder] = useState(false);
-
+  
   const toggleMenu = () => {
     setShowMenu(!showMenu);
     setShowOrder(false);
@@ -39,9 +39,8 @@ function App() {
 	const [total, setTotal] = useState(0);
 	const [countProducts, setCountProducts] = useState(0);
 
-
   return (
-    <>
+   
     <div className="bg-[#262837] w-full min-h-screen">
       
            <Sidebar showMenu={showMenu} />
@@ -72,7 +71,7 @@ function App() {
             <h2 className="text-xl text-gray-300">Selecciona tus productos</h2>
             
           </div>
-          {/* Content */}
+         
           <div >
             {/* Card */}
           <Card 
@@ -85,9 +84,9 @@ function App() {
           </div>
         </div>
       </main>
-      
+         
       </div>
-      </>
+    
    
   );
   

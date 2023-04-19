@@ -27,6 +27,14 @@ const Card = ({
 		setTotal(0);
 		setCountProducts(0);
 	};
+const confirmarPedido = () =>{
+  let productosParaWsp = allProducts.map(product => `- ${product.quantity} ${product.nombre} $${product.precio}`); // Le añadimos un guión delante del nombre y también el monto
+  const productosConFormatoAmigable = productosParaWsp.join('\n'); // Unimos todos los elementos del array en una cadena usando como separador el salto de línea
+  console.log(productosConFormatoAmigable); // Como la variable ya es una cadena, no necesitamos usar JSON.strignify()
+   window.location.href = 'https://api.whatsapp.com/send?phone=543755552007&text=Me%20interesan%20los%20siguientes%20productos' + ' ' + productosConFormatoAmigable; // Comento esta línea para no redirigir realmente en este ejemplo
+};
+  
+  
   return (
     <div
       className={`lg:col-span-2 fixed top-0 bg-[#1F1D2B] w-full lg:w-96 lg:right-0 h-full transition-all z-50 ${
@@ -92,7 +100,7 @@ const Card = ({
   <span className='total-pagar'>${total}</span>
 </div>
 <div >
-  <button className="bg-[#f07c04] w-full py-2 px-4 rounded-lg">
+  <button className="bg-[#f07c04] w-full py-2 px-4 rounded-lg " onClick={confirmarPedido}>
     Confirmar Pedido
   </button>
 </div>

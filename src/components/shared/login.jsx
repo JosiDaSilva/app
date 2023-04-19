@@ -11,7 +11,7 @@ export const LoginButton = ()=>{
       </div>
       <div>
         <img
-          src="../../assets/autopartes-sol2.png"
+          src="https://i.ibb.co/9nNFRB1/autopartes-sol-srl.png"
           className="w-20 h-20  -mt-12 shadow-2xl rounded-full" />
       </div>
       
